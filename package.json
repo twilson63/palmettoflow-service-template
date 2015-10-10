@@ -1,0 +1,20 @@
+{
+  "name": "service-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test",
+    "post-install": "json -I -f ./config/common.json -e 'this.palmetto.services = this.palmetto.services.push[\"@lincs/demo\"]'"
+  },
+  "keywords": [],
+  "author": "Tom",
+  "license": "ISC",
+  "dependencies": {
+    "palmettoflow-event": "^1.1.2",
+    "palmettoflow-nodejs": "^1.0.1"
+  },
+  "devDependencies": {
+    "tap": "^2.1.1"
+  }
+}
